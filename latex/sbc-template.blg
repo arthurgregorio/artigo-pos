@@ -2,45 +2,50 @@ This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: sbc-template.aux
 The style file: sbc.bst
-Database file #1: sbc-template.bib
-You've used 1 entry,
+Database file #1: abntex2-options.bib
+Warning--entry type for "abnt-url-package=url" isn't style-file defined
+--line 199 of file abntex2-options.bib
+Database file #2: sbc-template.bib
+Warning--empty year in abnt-url-package=url
+You've used 5 entries,
             1935 wiz_defined-function locations,
-            475 strings with 3740 characters,
-and the built_in function-call counts, 253 in all, are:
-= -- 24
-> -- 7
-< -- 1
-+ -- 2
-- -- 2
-* -- 15
-:= -- 54
-add.period$ -- 2
-call.type$ -- 1
-change.case$ -- 6
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 10
-empty$ -- 16
-format.name$ -- 3
-if$ -- 44
+            489 strings with 3979 characters,
+and the built_in function-call counts, 1184 in all, are:
+= -- 117
+> -- 28
+< -- 4
++ -- 8
+- -- 8
+* -- 74
+:= -- 228
+add.period$ -- 10
+call.type$ -- 5
+change.case$ -- 28
+chr.to.int$ -- 5
+cite$ -- 6
+duplicate$ -- 54
+empty$ -- 87
+format.name$ -- 12
+if$ -- 222
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 7
-num.names$ -- 3
-pop$ -- 4
+missing$ -- 2
+newline$ -- 23
+num.names$ -- 12
+pop$ -- 28
 preamble$ -- 1
-purify$ -- 6
+purify$ -- 30
 quote$ -- 0
-skip$ -- 10
+skip$ -- 42
 stack$ -- 0
-substring$ -- 12
-swap$ -- 0
+substring$ -- 60
+swap$ -- 1
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
-warning$ -- 0
-while$ -- 2
+type$ -- 28
+warning$ -- 1
+while$ -- 8
 width$ -- 0
-write$ -- 12
+write$ -- 51
+(There were 2 warnings)

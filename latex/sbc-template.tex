@@ -1,19 +1,19 @@
 \documentclass[12pt]{article}
 
+\usepackage{abntex2cite}
 \usepackage{sbc-template}
-
 \usepackage{graphicx,url}
 
-%\usepackage[brazil]{babel}   
+\usepackage[brazil]{babel}   
 \usepackage[latin1]{inputenc}  
-
+     
+\graphicspath{{imagens/}}     
      
 \sloppy
 
 \title{Proposta de arquitetura JEE para aplicações Java web}
 
 \author{Arthur Pereira Gregório}
-
 
 \address{Universidade Tecnológica federal do Paraná
   (UTFPR)\\
@@ -30,30 +30,39 @@
 \maketitle
 
 \begin{abstract}
-
+This article aims to present a proposal of JavaEE based architecture using its frameworks. Using the components of the JEE platform does not wont to gain from speed development but also work directly with the technologies specified by the language developers, thus avoiding the problem of lock-in vendor or get stuck to a third party and the development of his solution
 \end{abstract}
      
 \begin{resumo} 
-  
+Este artigo tem por objetivo apresentar um proposta de arquitetura base utilizando a plataforma JavaEE e seus frameworks. Utilizando os componentes da plataforma JEE não sói ganhamos com velocidade no desenvolvimento mas também trabalhamos diretamente com as tecnologias especificadas pelos desenvolvedores da linguagem, evitando assim o problema do vendor lock-in, ou seja, ficar preso a um terceiro e ao desenvolvimento da sua solução.
 \end{resumo}
-
 
 \section{Introdução}
 
-De acordo com \cite{xavier2013} arquitetura \'e a definição dos elementos que comp\~oem uma estrutura e como estes v\~ao se relacionar, assim podemos dizer que a cria\c{c}\~o de uma arquitetura de software \'e algo que exige do arquiteto uma s\'erie de conhecimentos espec\'ificos sobre como estes componentes funcionam ou como podem interagir entre s\'i.
+Segunda pesquisa feita pelo instituto \citeonline{tiobe:2015} a linguagem de programação Java, atualmente (em setembro de 2015) é a linguagem de programação mais utilizada no mundo. Java tornou-se a escolha mais frequente em equipes de desenvolvimento de software e acaba também por seguir as tendências do mercado atual, onde temos que projetar um software fácil de ajustar e barato de manter \cite{macoratti:2013}. 
 
-Definir uma arquitetura não \'e algo simples, pois mais importante do que saber integrar os compomentes selecionados, \'e saber identificar quais as poss\'iveis escolhas e quais os fatores que influenciam nestas escolhas \cite{xavier2013}. 
+Segundo \citeonline{xavier:2013} a definição de uma arquitura se inicia pela seleção dos elementos que comp\~oem a estrutura e como estes vão se relacionar, assim podemos dizer que a criação de uma arquitetura de software é algo que exige do arquiteto uma s\'erie de conhecimentos espec\'ificos sobre como estes componentes funcionam ou como podem interagir entre sí.
 
-\section{Trabalhos relacionados}
+Criar uma arquitetura não \'e algo simples, pois mais importante do que saber integrar os compomentes selecionados, \'e saber identificar quais as poss\'iveis escolhas e quais os fatores que influenciam nestas escolhas \cite{xavier:2013}. 
 
+Atualmente em aplicações web temos de atingir uma série de requisitos funcionáis através de nossas regras de negócios e ainda lidar com os requisitos não funcionais atendidos por nossa infraestrutura, proveniente da arquitetura na qual o sistema foi constituido. \textit{Java Entherprise Edition (JEE)} consiste de uma série de especificações bem detalhadas, dando uma receita de como deve ser implementado um software que faz cada um desses serviços de infraestrutura \cite{caelum:2015}.
+
+Seguindo a idéia de se utilizar um especificação padronizada e amplamente difundida como o JEE, diversos arquitetos de software hoje vem escolhendo o pacote de frameworks JEE para criação de suas aplicações. Dentre as opções disponíveis para uso dentro da plataforma, estão as especificações de persistência em banco de dados, transação, acesso remoto, web services, gerenciamento de threads, gerenciamento de conexões HTTP, cache de objetos, gerenciamento da sessão web, balanceamento de carga, entre outros.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.2]{jee-7-components.png}
+\caption{Componentes do framework JEE}
+\label{Componentes do framework JEE}
+\end{figure}
+
+\section{Trabalhos Relacionados}
 
 \section{Desenvolvimento}
 
 
 \section{Conclusão}
 
-
-\section{Referências}
 
 \bibliographystyle{sbc}
 \bibliography{sbc-template}

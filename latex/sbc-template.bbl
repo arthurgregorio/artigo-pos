@@ -1,7 +1,23 @@
 \begin{thebibliography}{}
 
-\bibitem[Xavier 2013]{xavier2013}
+\bibitem[aaaa ]{abnt-url-package=url}
+aaaa.
+
+\bibitem[Caelum 2015]{caelum:2015}
+Caelum (2015).
+\newblock {\em Java para desenvolvimento web}.
+\newblock Caelum.
+
+\bibitem[Macoratti 2013]{macoratti:2013}
+Macoratti, J.~C. (2013).
+\newblock .net - definindo a arquitetura de um projeto de software.
+
+\bibitem[Tiobe 2015]{tiobe:2015}
+Tiobe (2015).
+\newblock Tiobe programming community index.
+
+\bibitem[Xavier 2013]{xavier:2013}
 Xavier, K. (2013).
-\newblock O que e arquitetura de software.
+\newblock O que é arquitetura de software.
 
 \end{thebibliography}
