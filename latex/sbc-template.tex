@@ -11,7 +11,7 @@
      
 \sloppy
 
-\title{Proposta de arquitetura JEE para aplicações Java web}
+\title{Proposta de arquitetura para aplicações que utilizam framework JSF}
 
 \author{Arthur Pereira Gregório}
 
@@ -30,40 +30,66 @@
 \maketitle
 
 \begin{abstract}
-This article aims to present a proposal of JavaEE based architecture using its frameworks. Using the components of the JEE platform does not wont to gain from speed development but also work directly with the technologies specified by the language developers, thus avoiding the problem of lock-in vendor or get stuck to a third party and the development of his solution
+This article aims to present an architectural proposal for applications using JSF framework. In it we will see which key technologies we can use to build a simple architecture to maintain and fully standardized with the Java platform specifications Enthereprise Edition 7
 \end{abstract}
      
 \begin{resumo} 
-Este artigo tem por objetivo apresentar um proposta de arquitetura base utilizando a plataforma JavaEE e seus frameworks. Utilizando os componentes da plataforma JEE não sói ganhamos com velocidade no desenvolvimento mas também trabalhamos diretamente com as tecnologias especificadas pelos desenvolvedores da linguagem, evitando assim o problema do vendor lock-in, ou seja, ficar preso a um terceiro e ao desenvolvimento da sua solução.
+Este artigo tem por objetivo apresentar um proposta de arquitetura para aplicações que utilizam o framework JSF. Nele veremos quais a principais tecnologias podemos usar para construir uma arquitetura simples de manter e totalmente padronizada com as especificações da plataforma Java Enthereprise Edition versão 7.
 \end{resumo}
 
 \section{Introdução}
 
-Segunda pesquisa feita pelo instituto \citeonline{tiobe:2015} a linguagem de programação Java, atualmente (em setembro de 2015) é a linguagem de programação mais utilizada no mundo. Java tornou-se a escolha mais frequente em equipes de desenvolvimento de software e acaba também por seguir as tendências do mercado atual, onde temos que projetar um software fácil de ajustar e barato de manter \cite{macoratti:2013}. 
+Em pesquisa feita pelo instituto \citeonline{tiobe:2015} a linguagem de programação Java, atualmente (em setembro de 2015) é a linguagem de programação mais utilizada no mundo. Java tornou-se a escolha mais frequente em equipes de desenvolvimento de software e acaba também por seguir as tendências do mercado atual, onde temos que projetar um software fácil de ajustar e barato de manter \cite{macoratti:2013}. 
 
 Segundo \citeonline{xavier:2013} a definição de uma arquitura se inicia pela seleção dos elementos que comp\~oem a estrutura e como estes vão se relacionar, assim podemos dizer que a criação de uma arquitetura de software é algo que exige do arquiteto uma s\'erie de conhecimentos espec\'ificos sobre como estes componentes funcionam ou como podem interagir entre sí.
 
 Criar uma arquitetura não \'e algo simples, pois mais importante do que saber integrar os compomentes selecionados, \'e saber identificar quais as poss\'iveis escolhas e quais os fatores que influenciam nestas escolhas \cite{xavier:2013}. 
 
-Atualmente em aplicações web temos de atingir uma série de requisitos funcionáis através de nossas regras de negócios e ainda lidar com os requisitos não funcionais atendidos por nossa infraestrutura, proveniente da arquitetura na qual o sistema foi constituido. \textit{Java Entherprise Edition (JEE)} consiste de uma série de especificações bem detalhadas, dando uma receita de como deve ser implementado um software que faz cada um desses serviços de infraestrutura \cite{caelum:2015}.
+Atualmente em aplicações web temos de atingir uma série de requisitos funcionáis através de nossas regras de negócios e ainda lidar com os requisitos não funcionais atendidos por nossa infraestrutura, proveniente da arquitetura na qual o sistema foi constituido. \textit{Java Entherprise Edition (JEE)} consiste de uma série de especificações bem detalhadas, dando uma receita de como deve ser implementado um software que faz cada um desses serviços de infraestrutura \cite{caelum:2015}. A figura \ref{Componentes do framework JEE} apresenta todos os componentes da plataforma JEE presentes na versão 7.
 
-Seguindo a idéia de se utilizar um especificação padronizada e amplamente difundida como o JEE, diversos arquitetos de software hoje vem escolhendo o pacote de frameworks JEE para criação de suas aplicações. Dentre as opções disponíveis para uso dentro da plataforma, estão as especificações de persistência em banco de dados, transação, acesso remoto, web services, gerenciamento de threads, gerenciamento de conexões HTTP, cache de objetos, gerenciamento da sessão web, balanceamento de carga, entre outros.
-
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \centering
-\includegraphics[scale=0.2]{jee-7-components.png}
+\includegraphics[scale=0.3]{jee-7-components.png}
 \caption{Componentes do framework JEE}
 \label{Componentes do framework JEE}
 \end{figure}
 
+Seguindo a idéia de se utilizar um especificação padronizada e amplamente difundida como o JEE, diversos arquitetos de software hoje vem escolhendo o pacote de frameworks JEE para criação de suas aplicações. Dentre as opções disponíveis para uso dentro da plataforma, estão as especificações de persistência em banco de dados, transação, acesso remoto, web services, gerenciamento de threads, gerenciamento de conexões HTTP, cache de objetos, gerenciamento da sessão web, balanceamento de carga, entre outros.
+
+O JSF, uma tecnologia integrante da especificação JEE incorpora características de um framework MVC (model-view-controller) para WEB e de um modelo de interfaces gráficas baseado em eventos \cite{pitanga:2015} serve como base para boa parte das aplicações Java que rodam em ambiente web.
+
+De acordo com \citeonline{coelho:2013} JSF é um tecnologia muito útil e prática de ser aplicada, porém, muitas vezes mal utilizada pois não esta alinhada a uma estrutura de qualidae ou por falta de conhecimento de quem estruturou a aplicação. 
+
+Assim, nas próximas seções será apresentada uma proposta de arquitetura padronizada através da especificação JavaEE para aplicações que utilizam a tecnologia JSF a fim de minimizar os impáctos com escolhas erradas de frameworks que possam influenciar na qualidade da sistema a ser construído.
+
 \section{Trabalhos Relacionados}
+
+Dificilmente uma empresa terá recursos suficientes para competir com a comunidade mundial. Em outras palavras, o arquiteto de software de uma corporação deve conhecer o máximo possível das opções de componentes e frameworks existentes no mercado para não cair no velho e já conhecido paradigma de tentar reinventar a roda \cite{franzini:2013}.
+
+Deste modo, conhecer os principais componentes da arquitetura JavaEE antes de iniciar seu uso é indispensável para um arquiteto obter exito na tarefa de criar uma arquitetura duradoura.
+
+\subsection{Servelets}
+
+A API de servlets é um dos módulos presentes na plataforma JavaEE que é executado em um serivdor web possibilitando a aplicação que o estiver executando, receber e responder requisições através do protocolo HTTP, o \textit{HyperText Transfer Protocol} \cite{oracle:2011}.
+
+\subsection{Context and Dependency Injection}
+
+Segundo \citeonline{lopes:2012}, \textit{Context and Dependency Injection} ou CDI é a parte da especificação do JavaEE que cuida do controle e injeção dependências em nossos projetos, e caso a tecnologia de apresentação em uso seja o JSF versão 2, utilizar CDI é algo natural tendo em vista a integração entre as ferramentas.
+
+\subsection{Java Persistence API}
+
+JPA é um framework leve, baseado em \textit{Plain Old Java Objects} - POJOS - para persistir objetos Java \cite{medeiros:2012}. A Java Persistence API, não é apenas um framework para Mapeamento Objeto-Relacional ela também oferece integração direta com outros frameworks da tecnologia JavaEE, como por exemplo a API de Beans Validation que será descrita a seguir.
+
+\subsection{Bean Validation}
+
+\textit{Bean Validation} é a parte do framework Java responsável por validar objetos, membros deste objetos, métodos e construtores. Dentro de ambientes JavaEE, a API de \textit{Bean Validation} oferece ainda integração com outros serviços disponíveis na arquitetura como por exemplo a API de JPA \cite{durand:2014}.
 
 \section{Desenvolvimento}
 
 
 \section{Conclusão}
 
-
+\newpage
 \bibliographystyle{sbc}
 \bibliography{sbc-template}
 
