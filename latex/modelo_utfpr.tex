@@ -45,13 +45,13 @@ Segundo \citeonline{xavier:2013} a definição de uma arquitura se inicia pela sel
 
 Criar uma arquitetura não \'e algo simples, pois mais importante do que saber integrar os compomentes selecionados, \'e saber identificar quais as poss\'iveis escolhas e quais os fatores que influenciam nestas escolhas \cite{xavier:2013}. 
 
-Atualmente em aplicações web temos de atingir uma série de requisitos funcionáis através de nossas regras de negócios e ainda lidar com os requisitos não funcionais atendidos por nossa infraestrutura, proveniente da arquitetura na qual o sistema foi constituido. \textit{Java Entherprise Edition (JEE)} consiste de uma série de especificações bem detalhadas, dando uma receita de como deve ser implementado um software que faz cada um desses serviços de infraestrutura \cite{caelum:2015}. A figura \ref{Componentes do framework JEE} apresenta todos os componentes da plataforma JEE presentes na versão 7.
+Atualmente em aplicações web temos de atingir uma série de requisitos funcionáis através de nossas regras de negócios e ainda lidar com os requisitos não funcionais atendidos por nossa infraestrutura, proveniente da arquitetura na qual o sistema foi constituido. \textit{Java Entherprise Edition (JEE)} consiste de uma série de especificações bem detalhadas, dando uma receita de como deve ser implementado um software que faz cada um desses serviços de infraestrutura \cite{caelum:2015}. A figura \ref{componentes-jee} apresenta todos os componentes da plataforma JEE presentes na versão 7.
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.3]{jee-7-components.png}
 \caption{Componentes do framework JEE}
-\label{Componentes do framework JEE}
+\label{componentes-jee}
 \end{figure}
 
 Seguindo a idéia de se utilizar um especificação padronizada e amplamente difundida como o JEE, diversos arquitetos de software hoje vem escolhendo o pacote de frameworks JEE para criação de suas aplicações. Dentre as opções disponíveis para uso dentro da plataforma, estão as especificações de persistência em banco de dados, transação, acesso remoto, web services, gerenciamento de threads, gerenciamento de conexões HTTP, cache de objetos, gerenciamento da sessão web, balanceamento de carga, entre outros.
@@ -103,11 +103,33 @@ Segundo \citeonline{cukier:2010} o MDD divide as estruturas do software em quatr
 \item Camada de Infra-estrutura, é o apoio para as camadas superiores, aqui encontram-se métodos para acesso a dados, envio de emails entre outros
 \end{itemize}
 
+Na figura \ref{mdd-camadas} pode-se observar o fluxo de iteração entre cada uma das camadas bem como sua organização de maneira visual.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.8]{ddd-layers.jpg}
+\caption{Estrutura MDD}
+\label{mdd-camadas}
+\end{figure}
+
+\subsection{Componentes por camada}
+
+É natural que a divisão em camadas alem de promover uma melhor organização projeto também reduz o acoplamento entre as partes do sistema, fazendo com que as camadas conversem apenas com outras camadas próximas.
+
+Desta forma, para cada divisão da arquitetura proposta, um ou mais \textit{framework} do \textit{stack} JEE pode estar sendo utilizado dentro da camada em questão.
+
+\subsubsection{Camada de Interface}
+
+\subsubsection{Camada de Domínio}
+
+\subsubsection{Camada de Aplicação}
+
+\subsubsection{Camada de Infra-estrutura}
 
 
 \section{Conclusão}
 
 \newpage
-\bibliography{reflatex} 
+\bibliography{modelo_utfpr} 
 
 \end{document}

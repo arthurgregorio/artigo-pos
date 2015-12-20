@@ -13,10 +13,9 @@
 \abntrefinfo{Coelho}{COELHO}{2013}
 {COELHO, H. \textbf{JSF Eficaz}. [S.l.]: Casa do C\'odigo, 2013.}
 
-\bibitem[Durand e Kraffmiller 2010]{cukier:2010}
-\abntrefinfo{Durand e Kraffmiller}{DURAND; KRAFFMILLER}{2010}
-{DURAND, G.; KRAFFMILLER, S. \textbf{DDD: Introducao a Domain Driven Design}.
-  Daniel Cukier, 2010.
+\bibitem[Cukier 2010]{cukier:2010}
+\abntrefinfo{Cukier}{CUKIER}{2010}
+{CUKIER, D. \textbf{DDD: Introducao a Domain Driven Design}. 2010.
 Dispon{\'\i}vel em:
   $<$http://www.agileandart.com/2010/07/16/ddd-introducao-a-domain-driven-design/$>$.
   Acesso em: 19 de dezembro de 2015.}
@@ -29,10 +28,10 @@ Dispon{\'\i}vel em:
   $<$http://datascience.iq.harvard.edu/presentations/bean-validation-practical-examples-real-world-java-ee-7-application$>$.
   Acesso em: 24 de setembro de 2015.}
 
-\bibitem[Evans]{evans:2009}
-\abntrefinfo{Evans}{EVANS}{}
+\bibitem[Evans 2009]{evans:2009}
+\abntrefinfo{Evans}{EVANS}{2009}
 {EVANS, E. \textbf{Domain Driven Design: Atacando as Complexidades no Coracao
-  do Software}. [S.l.]: Alta Books.
+  do Software}. [S.l.]: Alta Books, 2009.
 ISBN 9788576085041.}
 
 \bibitem[Franzini 2015]{franzini:2013}
