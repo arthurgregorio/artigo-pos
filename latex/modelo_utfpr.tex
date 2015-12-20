@@ -1,28 +1,28 @@
 \documentclass[12pt]{article}
 
-\usepackage{abntex2cite}
 \usepackage{sbc-template}
-\usepackage{graphicx,url}
+\usepackage[alf,abnt-emphasize=bf,bibjustif,recuo=0cm, abnt-etal-cite=2, abnt-etal-list=99]{abntcite}
 
-\usepackage[brazil]{babel}   
-\usepackage[latin1]{inputenc}  
-     
+\usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{times}
+
 \graphicspath{{imagens/}}     
      
 \sloppy
 
 \title{Proposta de arquitetura para aplicações que utilizam framework JSF}
 
-\author{Arthur Pereira Gregório}
+\author{Arthur Pereira Gregório, André Roberto Ortoncelli}
 
-\address{Universidade Tecnológica federal do Paraná
-  (UTFPR)\\
-  ~endereco aqui ?!~
+\address{Universidade Tecnológica Federal do Paraná - UTFPR/CP\\
+  Avenida Alberto Carazzai, 1640 - CEP: 86300-000\\
+Cornélio Procópio-PR, Brazil
 \nextinstitute
-  Departamento de Sistemas e Computação\\
-  Universidade Regional de Blumenal (FURB) -- Blumenau, SC -- Brazil
-  \email{\{nedel,flavio\}@inf.ufrgs.br, R.Bordini@durham.ac.uk,
-  jomi@inf.furb.br}
+  Departamento de Computação
+  \email{arthurshakal@gmail.com, ortoncelli@utfpr.edu.br}
 }
 
 \begin{document} 
@@ -39,7 +39,7 @@ Este artigo tem por objetivo apresentar um proposta de arquitetura para aplicaçõ
 
 \section{Introdução}
 
-Em pesquisa feita pelo instituto \citeonline{tiobe:2015} a linguagem de programação Java, atualmente (em setembro de 2015) é a linguagem de programação mais utilizada no mundo. Java tornou-se a escolha mais frequente em equipes de desenvolvimento de software e acaba também por seguir as tendências do mercado atual, onde temos que projetar um software fácil de ajustar e barato de manter \cite{macoratti:2013}. 
+Segundo pesquisa realizada pelo instituto \citeonline{tiobe:2015} em setembro de 2015, Java é a linguagem de programação mais utilizada no mundo. A linguagem tornou-se a escolha mais frequente entre as equipes de desenvolvimento de software e acaba também por seguir as tendências do mercado atual, onde segundo \citeonline{macoratti:2013} temos que projetar um software fácil de ajustar e barato de manter. 
 
 Segundo \citeonline{xavier:2013} a definição de uma arquitura se inicia pela seleção dos elementos que comp\~oem a estrutura e como estes vão se relacionar, assim podemos dizer que a criação de uma arquitetura de software é algo que exige do arquiteto uma s\'erie de conhecimentos espec\'ificos sobre como estes componentes funcionam ou como podem interagir entre sí.
 
@@ -86,11 +86,28 @@ JPA é um framework leve, baseado em \textit{Plain Old Java Objects} - POJOS - pa
 
 \section{Desenvolvimento}
 
+Nesta seção será abordada a integração entre as tecnologias previamente apresentadas na elaboração de um arquitetura totalmente compátivel com o padrão especificado pelas \textit{Java Specifications Requests (JSR)} integrantes do \textit{framework} JEE.
+
+\subsection{Estrutura}
+
+A estrutura da arquitetura segue uma organização em camadas conforme a proposta do \textit{Model Driven Design (MDD)} apresentado por Eric Evans em seu livro sobre \textit{Domain Driven Design (DDD)}, que basicamente estabelece um conjunto de práticas para a construção de um software que expresse de maneira clara o problema em questão \cite{evans:2009}
+
+\subsubsection{MDD}
+
+Segundo \citeonline{cukier:2010} o MDD divide as estruturas do software em quatro camadas básicas:
+
+\begin{itemize}
+\item Camada de interface com o usuário, que como o próprio nome sugere, é responsável pela parte de iteração com as ações do usuário
+\item Camada de aplicação, realiza a conexão entre a camada de usuário e as camadas inferiores, não deve possuir regras de negócio
+\item Camada de Domínio, a representação dos conceitos, regras e lógicas do software, ou seja, onde o DDD se aplica
+\item Camada de Infra-estrutura, é o apoio para as camadas superiores, aqui encontram-se métodos para acesso a dados, envio de emails entre outros
+\end{itemize}
+
+
 
 \section{Conclusão}
 
 \newpage
-\bibliographystyle{sbc}
-\bibliography{sbc-template}
+\bibliography{reflatex} 
 
 \end{document}

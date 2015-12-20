@@ -1,0 +1,96 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.52 }
+
+\bibitem[Caelum 2015]{caelum:2015}
+\abntrefinfo{Caelum}{CAELUM}{2015}
+{CAELUM. \textbf{Java para desenvolvimento web}. [S.l.]: Caelum, 2015.}
+
+\bibitem[Coelho 2013]{coelho:2013}
+\abntrefinfo{Coelho}{COELHO}{2013}
+{COELHO, H. \textbf{JSF Eficaz}. [S.l.]: Casa do C\'odigo, 2013.}
+
+\bibitem[Durand e Kraffmiller 2010]{cukier:2010}
+\abntrefinfo{Durand e Kraffmiller}{DURAND; KRAFFMILLER}{2010}
+{DURAND, G.; KRAFFMILLER, S. \textbf{DDD: Introducao a Domain Driven Design}.
+  Daniel Cukier, 2010.
+Dispon{\'\i}vel em:
+  $<$http://www.agileandart.com/2010/07/16/ddd-introducao-a-domain-driven-design/$>$.
+  Acesso em: 19 de dezembro de 2015.}
+
+\bibitem[Durand e Kraffmiller 2014]{durand:2014}
+\abntrefinfo{Durand e Kraffmiller}{DURAND; KRAFFMILLER}{2014}
+{DURAND, G.; KRAFFMILLER, S. \textbf{Bean Validation: Practical Examples from a
+  Real-World Java EE 7 Application}. Harvard University, 2014.
+Dispon{\'\i}vel em:
+  $<$http://datascience.iq.harvard.edu/presentations/bean-validation-practical-examples-real-world-java-ee-7-application$>$.
+  Acesso em: 24 de setembro de 2015.}
+
+\bibitem[Evans]{evans:2009}
+\abntrefinfo{Evans}{EVANS}{}
+{EVANS, E. \textbf{Domain Driven Design: Atacando as Complexidades no Coracao
+  do Software}. [S.l.]: Alta Books.
+ISBN 9788576085041.}
+
+\bibitem[Franzini 2015]{franzini:2013}
+\abntrefinfo{Franzini}{FRANZINI}{2015}
+{FRANZINI, F. \textbf{Listagem de frameworks Java}. iMasters, 2015.
+Dispon{\'\i}vel em:
+  $<$http://imasters.com.br/linguagens/java/listagem-de-frameworks-java/$>$.
+  Acesso em: 22 de setembro de 2015.}
+
+\bibitem[Lopes 2012]{lopes:2012}
+\abntrefinfo{Lopes}{LOPES}{2012}
+{LOPES, S. \textbf{Use CDI no seu pr\'oximo projeto Java}. Caelum, 2012.
+Dispon{\'\i}vel em:
+  $<$http://blog.caelum.com.br/use-cdi-no-seu-proximo-projeto-java/$>$. Acesso
+  em: 24 de setembro de 2015.}
+
+\bibitem[Macoratti 2013]{macoratti:2013}
+\abntrefinfo{Macoratti}{MACORATTI}{2013}
+{MACORATTI, J.~C. \textbf{.NET - Definindo a arquitetura de um projeto de
+  software}. iMasters, 2013.
+Dispon{\'\i}vel em:
+  $<$http://imasters.com.br/framework/dotnet/net-definindo-a-arquitetura-de-um-projeto-de-software/$>$.
+  Acesso em: 20 de setembro de 2015.}
+
+\bibitem[Medeiros 2006]{medeiros:2012}
+\abntrefinfo{Medeiros}{MEDEIROS}{2006}
+{MEDEIROS, H. \textbf{Introdu{\c{c}}ão a JPA - Java Persistence API}.
+  Devmedia, 2006.
+Dispon{\'\i}vel em:
+  $<$http://www.devmedia.com.br/introducao-a-jpa-java-persistence-api/28173$>$.
+  Acesso em: 24 de setembro de 2015.}
+
+\bibitem[Oracle 2011]{oracle:2011}
+\abntrefinfo{Oracle}{ORACLE}{2011}
+{ORACLE. \textbf{JavaEE 6 Docs}. Oracle Corporation, 2011.
+Dispon{\'\i}vel em:
+  $<$http://docs.oracle.com/javaee/6/api/javax/servlet/Servlet.html$>$. Acesso
+  em: 23 de setembro de 2015.}
+
+\bibitem[Pitanga 2015]{pitanga:2015}
+\abntrefinfo{Pitanga}{PITANGA}{2015}
+{PITANGA, T. \textbf{JavaServer Faces: A mais nova tecnologia Java para
+  desenvolvimento WEB}. Grupo de Usu\'arios Java - GUJ, 2015.
+Dispon{\'\i}vel em: $<$http://www.guj.com.br/content/articles/jsf/jsf.pdf$>$.
+  Acesso em: 22 de setembro de 2015.}
+
+\bibitem[Tiobe 2015]{tiobe:2015}
+\abntrefinfo{Tiobe}{TIOBE}{2015}
+{TIOBE. \textbf{TIOBE Programming Community Index}. Tiobe, 2015.
+Dispon{\'\i}vel em:
+  $<$http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html$>$.
+  Acesso em: 20 de setembro de 2015.}
+
+\bibitem[Xavier 2013]{xavier:2013}
+\abntrefinfo{Xavier}{XAVIER}{2013}
+{XAVIER, K. \textbf{O que \'e arquitetura de software}. Globalcode, 2013.
+Dispon{\'\i}vel em:
+  $<$http://blog.globalcode.com.br/2013/11/o-que-e-arquitetura-de-software.html$>$.
+  Acesso em: 20 de setembro de 2015.}
+
+\end{thebibliography}
