@@ -5,6 +5,13 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.52 }
 
+\bibitem[Baxter 2010]{baxter:2010}
+\abntrefinfo{Baxter}{BAXTER}{2010}
+{BAXTER, L. \textbf{Spring to Java EE: A Migration Experience}. 2010.
+Dispon{\'\i}vel em:
+  $<$http://www.ocpsoft.org/java/spring-to-java-ee-a-migration-guide-cdi-jsf-jpa-jta-ejb/$>$.
+  Acesso em: 21 de dezembro de 2015.}
+
 \bibitem[Caelum 2015]{caelum:2015}
 \abntrefinfo{Caelum}{CAELUM}{2015}
 {CAELUM. \textbf{Java para desenvolvimento web}. [S.l.]: Caelum, 2015.}
@@ -41,6 +48,13 @@ Dispon{\'\i}vel em:
   $<$http://imasters.com.br/linguagens/java/listagem-de-frameworks-java/$>$.
   Acesso em: 22 de setembro de 2015.}
 
+\bibitem[Gregorio 2015]{gregorio:2015}
+\abntrefinfo{Gregorio}{GREGORIO}{2015}
+{GREGORIO, A. \textbf{Do Spring para o JEE}. 2015.
+Dispon{\'\i}vel em:
+  $<$http://arthurgregorio.eti.br/blog/programacao/do-spring-para-o-jee/$>$.
+  Acesso em: 21 de dezembro de 2015.}
+
 \bibitem[Lopes 2012]{lopes:2012}
 \abntrefinfo{Lopes}{LOPES}{2012}
 {LOPES, S. \textbf{Use CDI no seu pr\'oximo projeto Java}. Caelum, 2012.
@@ -70,6 +84,13 @@ Dispon{\'\i}vel em:
 Dispon{\'\i}vel em:
   $<$http://docs.oracle.com/javaee/6/api/javax/servlet/Servlet.html$>$. Acesso
   em: 23 de setembro de 2015.}
+
+\bibitem[Oracle 2015]{oracle:2015}
+\abntrefinfo{Oracle}{ORACLE}{2015}
+{ORACLE. \textbf{JavaServer Faces Technology}. 2015.
+Dispon{\'\i}vel em:
+  $<$http://www.oracle.com/technetwork/java/javaee/javaserverfaces-139869.html$>$.
+  Acesso em: 21 de dezembro de 2015.}
 
 \bibitem[Pitanga 2015]{pitanga:2015}
 \abntrefinfo{Pitanga}{PITANGA}{2015}

@@ -88,6 +88,18 @@ JPA é um framework leve, baseado em \textit{Plain Old Java Objects} - POJOS - pa
 
 Nesta seção será abordada a integração entre as tecnologias previamente apresentadas na elaboração de um arquitetura totalmente compátivel com o padrão especificado pelas \textit{Java Specifications Requests (JSR)} integrantes do \textit{framework} JEE.
 
+Para tal, um projeto \textit{open-source} foi disponibilizado no \textit{GitHub} como uma implementação funcional de uma arquitetura que utiliza totalmente a especificação JEE.
+
+O projeto pode ser encontrado no link https://github.com/arthurgregorio/web-budget e sua documentação no link https://github.com/arthurgregorio/web-budget/blob/master/README.md.
+
+\subsection{O Projeto}
+
+O \textit{webBudget} é um sistema de controle financeiro pessoal para pequenas empresas ou pessoas que apenas querem ter um maior controle de suas finanças.
+
+Inicialmenteo \textit{webBudget} foi desenvolvido utilizando tecnologias não padronizadas da plataforma Java para web, tais como \textit{Spring Framework}. Com passar do tempo houve-se então a necessidade de padronização da arquitetura e também aprimoramentos que só poderiam ser encontrados na plataforma JEE, sendo eles: CDI e API de Eventos \cite{gregorio:2015}.
+
+Iniciando o processo de migração houve a necessidade da criação e definição de uma arquitetura, mais precisamente a criação de uma estrutura para então dentro dela acomodar cada impementação dos componentes do \textit{framework} JEE.
+
 \subsection{Estrutura}
 
 A estrutura da arquitetura segue uma organização em camadas conforme a proposta do \textit{Model Driven Design (MDD)} apresentado por Eric Evans em seu livro sobre \textit{Domain Driven Design (DDD)}, que basicamente estabelece um conjunto de práticas para a construção de um software que expresse de maneira clara o problema em questão \cite{evans:2009}
@@ -120,14 +132,37 @@ Desta forma, para cada divisão da arquitetura proposta, um ou mais \textit{frame
 
 \subsubsection{Camada de Interface}
 
+Como camada de interface, a escolha foi guiada pela produtividade e simplicidade oferecida pela implementação orientada a componentes oferecida pelo \textit{Java Server Faces} (JSF) que através da JSR-314 é o padrão para construção de server-side interfaces de maneira rápida e simples \cite{oracle:2015}.
+
+Como componente auxiliar a este processo de construção, foi utilizado o \textit{framework}  de componentes para JSF \textit{Primefaces}, que por ser construído se baseando na especificação do \textit{framework} JSF também é padronizado com JEE.
+
 \subsubsection{Camada de Domínio}
+
+Na camada de domínio existem pode-se verificar a atuação de três \textit{frameworks}, sendo eles: 
+
+\begin{enumerate}
+\item Hibernate, responsável pela implementação do mapemaamento objeto-relacional entre o banco de dados e o modelo de domínio da aplicação
+\item Picketlink, responsável pela atuação na segurança da aplicação, onde através de um modelo de segurança integrado ao domínio provê autênticação e autorização aos usuários
+\item CDI, que em conjunto com as classes da camada de aplicação provê a inversão de controle e também injeção contexto e dependências para a aplicação
+\end{enumerate}
 
 \subsubsection{Camada de Aplicação}
 
+Na camada de aplicação existe basicamente a outra metade do \textit{framework} JSF provida pelo CDI, as \textit{controllers} que servem como geranciadores da interface gráfica.
+
+Estas \textit{controllers} também conhecidas como \textit{managed beans} tem por função ser o local onde as páginas irão buscar as informações para executar uma operação na tela \cite{coelho:2013}.
+
+Nesta camada também pode ser encontrada algumas funções integradas via CDI com o contexto de segurança gerenciado pelo \textit{Picketlink}, mais especificamente no que tange o processo de autenticação e autorização de acesso aos menus do sistema.
+
 \subsubsection{Camada de Infra-estrutura}
 
+Na camada de infra-estrutura encontram-se as configurações de \textit{frameworks} já citados, como o caso do picketlink, e também os meios necessários para que a aplicação consiga enviar e-mails através da API de e-mails do JEE, o Java Mail.
 
 \section{Conclusão}
+
+Segundo \citeonline{baxter:2010} toda aplicação precisa basicamente do mesmo conjunto de recursos: persistência, injeção de dependências, uma boa camada de visão entre outras. E tudo isso é possivel de se fazer apenas com os \textit{frameworks} do \textit{stack} JEE.
+
+Como pode ser observado no \textit{webBudget}, toda a sua estrutura se mantem padronizada com o que a especificação padrão da tecnologia prega, utilizando apenas os frameworks tidos como implementação de refeência para cada componente da plataforma.
 
 \newpage
 \bibliography{modelo_utfpr} 

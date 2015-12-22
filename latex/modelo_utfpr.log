@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.12.19)  19 DEC 2015 23:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.12.19)  21 DEC 2015 23:10
 entering extended mode
 **./modelo_utfpr.tex
 (modelo_utfpr.tex
@@ -390,111 +390,165 @@ Underfull \hbox (badness 1092) in paragraph at lines 77--78
 cy In-jec-tion \OT1/ptm/m/n/12 ou CDI []e a parte da
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 100.
 
-(D:\Latex\tex\latex\psnfss\omsptm.fd
+Underfull \hbox (badness 1968) in paragraph at lines 91--92
+[]\OT1/ptm/m/n/12 Para tal, um pro-jeto \OT1/ptm/m/it/12 open-source \OT1/ptm/m
+/n/12 foi dis-po-ni-bi-li-zado no \OT1/ptm/m/it/12 GitHub \OT1/ptm/m/n/12 como 
+uma
+ []
+
+
+Underfull \hbox (badness 2165) in paragraph at lines 93--94
+[]\OT1/ptm/m/n/12 O pro-jeto pode ser en-con-trado no link https://github.com/a
+rthurgregorio/web-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+\OT1/ptm/m/n/12 budget e sua documenta[][]ao no link https://github.com/arthurg
+regorio/web-
+ []
+
+[3]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 112.
+
+ (D:\Latex\tex\latex\psnfss\omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 100.
- [3]
-<imagens/ddd-layers.jpg, id=20, 418.56375pt x 361.35pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 112.
+
+<imagens/ddd-layers.jpg, id=19, 418.56375pt x 361.35pt>
 File: imagens/ddd-layers.jpg Graphic file (type jpg)
 
 <use imagens/ddd-layers.jpg>
-Package pdftex.def Info: imagens/ddd-layers.jpg used on input line 110.
+Package pdftex.def Info: imagens/ddd-layers.jpg used on input line 122.
 (pdftex.def)             Requested size: 334.85144pt x 289.0804pt.
+ [4 <./imagens/ddd-layers.jpg>] [5] [6]
+(modelo_utfpr.bbl
+Underfull \hbox (badness 1817) in paragraph at lines 10--14
+[]\OT1/ptm/m/n/12 BAXTER, L. \OT1/ptm/b/n/12 Spring to Java EE: A Mi-gra-tion E
+x-pe-ri-ence\OT1/ptm/m/n/12 . 2010. Dis-pon[]vel
+ []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4 <./imagens/ddd-layers.jpg>] [5] (modelo_utfpr.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 18--22
+Underfull \hbox (badness 5175) in paragraph at lines 10--14
+\OT1/ptm/m/n/12 em: $\OML/cmm/m/it/12 <$\OT1/ptm/m/n/12 http://www.ocpsoft.org/
+java/spring-to-java-ee-a-migration-guide-cdi-jsf-jpa-jta-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
 $\OML/cmm/m/it/12 <$\OT1/ptm/m/n/12 http://www.agileandart.com/2010/07/16/ddd-i
 ntroducao-a-domain-driven-design/$\OML/cmm/m/it/12 >$\OT1/ptm/m/n/12 .
  []
 
 
-Underfull \hbox (badness 6284) in paragraph at lines 25--30
+Underfull \hbox (badness 6284) in paragraph at lines 32--37
 []\OT1/ptm/m/n/12 DURAND, G.; KRAFF-MIL-LER, S. \OT1/ptm/b/n/12 Bean Va-li-da-t
 ion: Prac-ti-cal Exam-ples
  []
 
 
-Underfull \hbox (badness 3219) in paragraph at lines 25--30
+Underfull \hbox (badness 3219) in paragraph at lines 32--37
 \OT1/ptm/b/n/12 from a Real-World Java EE 7 Ap-pli-ca-tion\OT1/ptm/m/n/12 . Har
 -vard Uni-ver-sity, 2014. Dis-
  []
 
 
-Underfull \hbox (badness 1681) in paragraph at lines 39--43
+Underfull \hbox (badness 1681) in paragraph at lines 46--50
 []\OT1/ptm/m/n/12 FRANZINI, F. \OT1/ptm/b/n/12 Lis-ta-gem de fra-meworks Java\O
 T1/ptm/m/n/12 . iMas-ters, 2015. Dis-pon[]vel em:
  []
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/ui' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 61.
 
-Underfull \hbox (badness 1112) in paragraph at lines 61--66
+Underfull \hbox (badness 10000) in paragraph at lines 53--57
+[]\OT1/ptm/m/n/12 GREGORIO, A. \OT1/ptm/b/n/12 Do Spring para o JEE\OT1/ptm/m/n
+/12 . 2015. Dis-pon[]vel em:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--57
+$\OML/cmm/m/it/12 <$\OT1/ptm/m/n/12 http://arthurgregorio.eti.br/blog/programac
+ao/do-spring-para-o-jee/$\OML/cmm/m/it/12 >$\OT1/ptm/m/n/12 . Acesso em:
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/ui' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 75.
+
+Underfull \hbox (badness 1112) in paragraph at lines 75--80
 []\OT1/ptm/m/n/12 MEDEIROS, H. \OT1/ptm/b/n/12 Introdu[][]A\OT1/ptm/b/it/12 $\O
 T1/ptm/b/n/12 o a JPA - Java Per-sis-tence API\OT1/ptm/m/n/12 . Dev-me-dia, 200
 6.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--66
+Underfull \hbox (badness 10000) in paragraph at lines 75--80
 \OT1/ptm/m/n/12 Dis-pon[]vel em: $\OML/cmm/m/it/12 <$\OT1/ptm/m/n/12 http://ww
 w.devmedia.com.br/introducao-a-jpa-java-persistence-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--73
+Underfull \hbox (badness 10000) in paragraph at lines 83--87
 []\OT1/ptm/m/n/12 ORACLE. \OT1/ptm/b/n/12 Ja-vaEE 6 Docs\OT1/ptm/m/n/12 . Ora-c
 le Cor-po-ra-tion, 2011. Dis-pon[]vel em:
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 69--73
+Underfull \hbox (badness 1648) in paragraph at lines 83--87
 $\OML/cmm/m/it/12 <$\OT1/ptm/m/n/12 http://docs.oracle.com/javaee/6/api/javax/s
 ervlet/Servlet.html$\OML/cmm/m/it/12 >$\OT1/ptm/m/n/12 . Acesso em: 23 de
  []
 
 
-Underfull \hbox (badness 4429) in paragraph at lines 76--80
+Underfull \hbox (badness 10000) in paragraph at lines 90--94
+[]\OT1/ptm/m/n/12 ORACLE. \OT1/ptm/b/n/12 Ja-va-Ser-ver Fa-ces Te-ch-no-logy\OT
+1/ptm/m/n/12 . 2015. Dis-pon[]vel em:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--94
+$\OML/cmm/m/it/12 <$\OT1/ptm/m/n/12 http://www.oracle.com/technetwork/java/java
+ee/javaserverfaces-139869.html$\OML/cmm/m/it/12 >$\OT1/ptm/m/n/12 .
+ []
+
+
+Underfull \hbox (badness 4429) in paragraph at lines 97--101
 []\OT1/ptm/m/n/12 PITANGA, T. \OT1/ptm/b/n/12 Ja-va-Ser-ver Fa-ces: A mais nova
  tec-no-lo-gia Java para de-
  []
 
 
-Underfull \hbox (badness 3907) in paragraph at lines 76--80
+Underfull \hbox (badness 3907) in paragraph at lines 97--101
 \OT1/ptm/b/n/12 sen-vol-vi-mento WEB\OT1/ptm/m/n/12 . Grupo de Usu[]arios Java 
 - GUJ, 2015. Dis-pon[]vel em:
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 83--87
+Underfull \hbox (badness 1087) in paragraph at lines 104--108
 []\OT1/ptm/m/n/12 TIOBE. \OT1/ptm/b/n/12 TI-OBE Pro-gram-ming Com-mu-nity In-de
 x\OT1/ptm/m/n/12 . Ti-obe, 2015. Dis-pon[]vel em:
  []
 
-) [6] (modelo_utfpr.aux) ) 
+[7]) [8] (modelo_utfpr.aux) ) 
 Here is how much of TeX's memory you used:
- 4806 strings out of 493634
- 64629 string characters out of 3151461
- 137601 words of memory out of 3000000
- 8061 multiletter control sequences out of 15000+200000
+ 4821 strings out of 493634
+ 64915 string characters out of 3151461
+ 137724 words of memory out of 3000000
+ 8076 multiletter control sequences out of 15000+200000
  22942 words of font info for 53 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  43i,10n,40p,632b,312s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/Latex/fonts/enc/dvips/fontname/8r.enc}<D:/Latex/f
-onts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Latex/fonts/type1/public/amsfonts/
-cm/cmr8.pfb><D:/Latex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Latex/fonts
-/type1/urw/courier/ucrr8a.pfb><D:/Latex/fonts/type1/urw/helvetic/uhvb8a.pfb><D:
-/Latex/fonts/type1/urw/times/utmb8a.pfb><D:/Latex/fonts/type1/urw/times/utmbi8a
-.pfb><D:/Latex/fonts/type1/urw/times/utmr8a.pfb><D:/Latex/fonts/type1/urw/times
-/utmri8a.pfb>
-Output written on modelo_utfpr.pdf (6 pages, 237902 bytes).
+{D:/Latex/fonts/enc/dvips/fontname/8r.enc}<D:/Late
+x/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Latex/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb><D:/Latex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Latex/fo
+nts/type1/urw/courier/ucrr8a.pfb><D:/Latex/fonts/type1/urw/helvetic/uhvb8a.pfb>
+<D:/Latex/fonts/type1/urw/times/utmb8a.pfb><D:/Latex/fonts/type1/urw/times/utmb
+i8a.pfb><D:/Latex/fonts/type1/urw/times/utmr8a.pfb><D:/Latex/fonts/type1/urw/ti
+mes/utmri8a.pfb>
+Output written on modelo_utfpr.pdf (8 pages, 243639 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
+ 68 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
